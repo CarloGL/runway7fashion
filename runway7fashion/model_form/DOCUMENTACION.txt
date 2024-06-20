@@ -1,0 +1,30 @@
+Documentación del Código
+register.php
+Descripción:
+Este archivo procesa el formulario de registro de modelos y guarda la información en la base de datos.
+
+Funcionalidades:
+Procesa los datos del formulario.
+Valida y guarda la foto de perfil del modelo.
+Inserta los datos del modelo en la base de datos con el estado "pending".
+admin.php
+Descripción:
+Este archivo proporciona una interfaz para que el administrador pueda revisar y aceptar/rechazar modelos.
+
+Funcionalidades:
+Muestra los modelos pendientes de revisión.
+Permite al administrador aceptar o rechazar modelos.
+Actualiza el estado de los modelos en la base de datos.
+accepted_models.php
+Descripción:
+Este archivo muestra una lista de modelos que han sido aceptados.
+
+Funcionalidades:
+Muestra la información básica de los modelos aceptados.
+Proporciona un botón para ver más detalles sobre cada modelo.
+model_details.php
+Descripción:
+Este archivo muestra todos los detalles de un modelo específico.
+
+Funcionalidades:
+Recupera y muestra todos los detalles almacenados en la base de datos para un modelo dado.

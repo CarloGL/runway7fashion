@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Modelos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div>
+                    <img class="logo" src="https://models.runway7.fashion/wp-content/uploads/2024/06/LOGO-RUNWAY-7.webp" alt="">
+                </div>
+                <div class="menu">
+                    <a href="accepted_models.php">Home</a>
+                    <a href="register.html">Add Model</a>
+                    <a href="admin.php">Administrar Modelos</a>
+                </div>
+                <div class="log-bt">
+                    <a href="">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container d-flex justify-content-center">
+        <div class="w-100" style="max-width: 600px;">
+            <div id="register-header" class="text-center my-5">
+                <h1>Formulario de Registro de Modelos</h1>
+            </div>
+            <form action="register.php" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="full_name" class="form-label">Full Name:</label>
+                    <input type="text" class="form-control" id="full_name" name="full_name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Gender:</label>
+                    <select class="form-select" id="gender" name="gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Age:</label>
+                    <input type="number" class="form-control" id="age" name="age" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="availability" class="form-label">Availability:</label>
+                    <select class="form-select" id="availability" name="availability" required>
+                        <option value="Available">Available</option>
+                        <option value="Not Available">Not Available</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="bio" class="form-label">Bio:</label>
+                    <textarea class="form-control" id="bio" name="bio" maxlength="500" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="experience" class="form-label">Experience:</label>
+                    <textarea class="form-control" id="experience" name="experience" maxlength="500" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="photo" class="form-label">Upload Photo Profile:</label>
+                    <input type="file" class="form-control" id="photo" name="photo" accept="image/*" required>
+                </div>
+                <div class="mb-3">
+                    <label for="link_walk" class="form-label">Link to Your Walk (YouTube):</label>
+                    <input type="url" class="form-control" id="link_walk" name="link_walk" required>
+                </div>
+                <div class="mb-3">
+                    <label for="height" class="form-label">Height (cm):</label>
+                    <input type="number" class="form-control" id="height" name="height" required>
+                </div>
+                <div class="mb-3">
+                    <label for="weight" class="form-label">Weight (kg):</label>
+                    <input type="number" class="form-control" id="weight" name="weight" required>
+                </div>
+                <div class="mb-3">
+                    <label for="measurements_waist" class="form-label">Measurements Waist (cm):</label>
+                    <input type="number" class="form-control" id="measurements_waist" name="measurements_waist" required>
+                </div>
+                <div class="mb-3">
+                    <label for="measurements_bust" class="form-label">Measurements Bust (cm):</label>
+                    <input type="number" class="form-control" id="measurements_bust" name="measurements_bust" required>
+                </div>
+                <div class="mb-3">
+                    <label for="ig_handle" class="form-label">IG Handle:</label>
+                    <input type="text" class="form-control" id="ig_handle" name="ig_handle" required>
+                </div>
+                <div class="mb-3">
+                    <label for="ig_link" class="form-label">IG Link:</label>
+                    <input type="url" class="form-control" id="ig_link" name="ig_link" required>
+                </div>
+                <div class="mb-3">
+                    <label for="tiktok_handle" class="form-label">Tiktok Handle:</label>
+                    <input type="text" class="form-control" id="tiktok_handle" name="tiktok_handle" required>
+                </div>
+                <div class="mb-3">
+                    <label for="tiktok_link" class="form-label">Tiktok Link:</label>
+                    <input type="url" class="form-control" id="tiktok_link" name="tiktok_link" required>
+                </div>
+                <div class="d-grid">
+                    <input type="submit" class="btn btn-dark" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/7V8+Sc8S4iXzE3B5UeS6tf5Z+nPH37L+ghCkrX" crossorigin="anonymous"></script>
+</body>
+</html>
